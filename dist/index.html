@@ -68,44 +68,47 @@
 			font-style: normal;
 		}
 
-
-
 		.video-section {
-			padding: 60px 0;
-			background-color: #f9f9f9;
-		}
+    padding: 50px 20px; /* Espaciado superior e inferior */
+    background-color: #f9f9f9; /* Fondo claro */
+}
 
-		.video-section .section-title {
-			font-size: 28px;
-			font-weight: bold;
-			color: #333;
-			margin-bottom: 15px;
-		}
 
-		.video-section .section-description {
-			font-size: 16px;
-			color: #555;
-			margin-bottom: 30px;
-		}
 
-		.video-container {
-			position: relative;
-			width: 100%;
-			padding-bottom: 56.25%;
-			/* Relación de aspecto 16:9 */
-			overflow: hidden;
-			border-radius: 8px;
-			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		}
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* Relación de aspecto 16:9 */
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-		.video-container iframe {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			border: none;
-		}
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.75rem;
+    }
+
+    .section-description {
+        font-size: 0.9rem;
+    }
+
+    .video-container {
+        border-radius: 8px;
+    }
+}
+
+
+
 	</style>
 </head>
 
@@ -246,7 +249,7 @@
 	<!-- start features Area -->
 	<section class="features-area section_gap">
 		<div class="container">
-			<div class="row features-inner" style="background-color: #fcb024;">
+			<div class="row features-inner" style="background-color: rgba(255, 153, 0, 0.849)">
 				<!-- single features -->
 				<div class="col-lg-3 col-md-6 col-sm-6">
 					<div class="single-features">
@@ -522,30 +525,33 @@
 	<!-- End exclusive deal Area -->
 
 	<!-- Video Section -->
-	<section class="video-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2 class="section-title">Disfruta la Experiencia</h2>
-					<p class="section-description">Conoce más sobre nuestras taquizas y servicios viendo nuestro video
-						de presentación.</p>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-10">
-					<div class="video-container">
-						<iframe src="/img/Videos/videotacos.mp4" title="Video de Presentación"
-							allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section><br><br>
+<section class="video-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-title">Disfruta la Experiencia</h2>
+                <p class="section-description">
+                    Conoce más sobre nuestras taquizas y servicios viendo nuestro video de presentación.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="video-container">
+                    <video loop controls muted class="responsive-video">
+                        <source src="./img/Videos/videotacos.mp4" type="video/mp4">
+                        Tu navegador no soporta videos HTML5.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><br><br>
 
 	<!-- Start related-product Area -->
-	<section class="related-product-area section_gap_bottom" style="background-color: #f8a529;">
+	<section class="related-product-area section_gap_bottom"
+		style="background: rgb(207,128,0);
+background: linear-gradient(137deg, rgba(207,128,0,0.9752275910364145) 0%, rgb(255, 153, 0) 12%, rgba(244,180,0,1) 100%);">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
@@ -714,7 +720,7 @@
 							</div>
 						</div>
 					</div>
-					
+
 				</div>
 			</div>
 
@@ -756,6 +762,17 @@
 										<p class="hover-text">Me Encanta</p>
 									</a>
 
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
+
 								</div>
 
 							</div>
@@ -777,6 +794,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 
@@ -800,6 +827,17 @@
 										<p class="hover-text">Me Encanta</p>
 									</a>
 
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
+
 								</div>
 
 							</div>
@@ -821,6 +859,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 
@@ -843,6 +891,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 
@@ -865,6 +923,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 
@@ -887,6 +955,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 
@@ -909,6 +987,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 
@@ -950,6 +1038,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 							</div>
@@ -972,6 +1070,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 							</div>
@@ -994,6 +1102,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 							</div>
@@ -1016,6 +1134,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 							</div>
@@ -1038,6 +1166,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 							</div>
@@ -1059,6 +1197,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 							</div>
@@ -1080,6 +1228,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 							</div>
@@ -1102,6 +1260,16 @@
 										<span class="lnr lnr-heart"></span>
 										<p class="hover-text">Me Encanta</p>
 									</a>
+									<div class="footer-social d-flex align-items-center">
+										<a href="https://www.facebook.com/profile.php?id=61569756245811"><i
+												class="fa fa-facebook" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa fa-tiktok" target="_blank"></i></a>
+										<a href="https://www.instagram.com/taqu.izasrefugio/"><i
+												class="fa-brands fa-instagram" target="_blank"></i></a>
+										<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
+												class="fa-brands " target="_blank"></i></a>
+									</div>
 
 								</div>
 							</div>
@@ -1117,27 +1285,28 @@
 	<!-- end product Area -->
 
 	<!-- Video Section -->
-	<section class="video-section">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-12 text-center">
-					<h2 class="section-title">Disfruta la Experiencia</h2>
-					<p class="section-description">Conoce más sobre nuestras taquizas y servicios viendo nuestro video
-						de presentación.</p>
-				</div>
-			</div>
-			<div class="row justify-content-center">
-				<div class="col-lg-8 col-md-10">
-					<div class="video-container">
-						<iframe src="/img/Videos/videotacos2.mp4" title="Video de Presentación"
-							allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen>
-						</iframe>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+<section class="video-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-title">Disfruta la Experiencia</h2>
+                <p class="section-description">
+                    Conoce más sobre nuestras taquizas y servicios viendo nuestro video de presentación.
+                </p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="video-container">
+                    <video loop controls muted class="responsive-video">
+                        <source src="./img/Videos/videotacos2.mp4" type="video/mp4">
+                        Tu navegador no soporta videos HTML5.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 	<!-- start footer Area -->
@@ -1197,19 +1366,18 @@
 					</ul> -->
 					</div>
 				</div>
-				<div class="col-lg-2 col-md-6 col-sm-6">
+				<div class="col-lg-2 col-md-6 col-sm-6 text-center">
 					<div class="single-footer-widget">
 						<h6>Siguenos</h6>
 						<p>Descubre nuestras Redes Sociales</p>
-						<div class="footer-social d-flex align-items-center">
+						<div class="footer-social d-flex justify-content-center align-items-center">
 							<a href="https://www.facebook.com/profile.php?id=61569756245811"><i class="fa fa-facebook"
 									target="_blank"></i></a>
 							<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
 									class="fa fa-tiktok" target="_blank"></i></a>
 							<a href="https://www.instagram.com/taqu.izasrefugio/"><i class="fa-brands fa-instagram"
 									target="_blank"></i></a>
-							<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1"><i
-									class="fa-brands " target="_blank"></i></a>
+							
 						</div>
 					</div>
 				</div>
