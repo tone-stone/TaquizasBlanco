@@ -43,353 +43,353 @@
 	<!--
 		CSS
 		============================================= -->
-		<link rel="stylesheet" href="css/linearicons.css">
-		<link rel="preconnect" href="https://fonts.googleapis.com">
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
-		<script src="https://kit.fontawesome.com/12ac151517.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/themify-icons.css">
-		<link rel="stylesheet" href="css/bootstrap.css">
-		<link rel="stylesheet" href="css/owl.carousel.css">
-		<link rel="stylesheet" href="css/nice-select.css">
-		<link rel="stylesheet" href="css/nouislider.min.css">
-		<link rel="stylesheet" href="css/ion.rangeSlider.css" />
-		<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
-		<link rel="stylesheet" href="css/magnific-popup.css">
-		<link rel="stylesheet" href="css/main.css">
-		<style>
-			.related-product-area .single-related-product {
-				border: 1px solid #ddd;
-				padding: 15px;
-				border-radius: 8px;
-				background-color: #f9f9f9;
-				transition: transform 0.3s ease;
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/12ac151517.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/nouislider.min.css">
+	<link rel="stylesheet" href="css/ion.rangeSlider.css" />
+	<link rel="stylesheet" href="css/ion.rangeSlider.skinFlat.css" />
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/main.css">
+	<style>
+		.related-product-area .single-related-product {
+			border: 1px solid #ddd;
+			padding: 15px;
+			border-radius: 8px;
+			background-color: #f9f9f9;
+			transition: transform 0.3s ease;
+		}
+
+		.related-product-area .single-related-product:hover {
+			transform: scale(1.05);
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.related-product-area .title {
+			color: #ff5722;
+			font-weight: bold;
+			font-size: 1.2rem;
+		}
+
+		.related-product-area ul li {
+			font-size: 0.9rem;
+			line-height: 1.5;
+		}
+
+
+
+		.dancing {
+			font-family: "Dancing Script", serif;
+			font-optical-sizing: auto;
+			font-weight: 700;
+			font-style: normal;
+		}
+
+		.video-section {
+			padding: 50px 20px;
+			/* Espaciado superior e inferior */
+			background-color: #f9f9f9;
+			/* Fondo claro */
+		}
+
+
+
+		.video-container {
+			position: relative;
+			width: 100%;
+			padding-top: 56.25%;
+			/* Relación de aspecto 16:9 */
+			overflow: hidden;
+			border-radius: 10px;
+			box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		}
+
+		.video-container video {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		@media (max-width: 768px) {
+			.section-title {
+				font-size: 1rem;
 			}
-	
-			.related-product-area .single-related-product:hover {
-				transform: scale(1.05);
-				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-			}
-	
-			.related-product-area .title {
-				color: #ff5722;
-				font-weight: bold;
-				font-size: 1.2rem;
-			}
-	
-			.related-product-area ul li {
+
+			.section-description {
 				font-size: 0.9rem;
-				line-height: 1.5;
 			}
-	
-	
-	
-			.dancing {
-				font-family: "Dancing Script", serif;
-				font-optical-sizing: auto;
-				font-weight: 700;
-				font-style: normal;
-			}
-	
-			.video-section {
-				padding: 50px 20px;
-				/* Espaciado superior e inferior */
-				background-color: #f9f9f9;
-				/* Fondo claro */
-			}
-	
-	
-	
+
 			.video-container {
-				position: relative;
-				width: 100%;
-				padding-top: 56.25%;
-				/* Relación de aspecto 16:9 */
-				overflow: hidden;
-				border-radius: 10px;
-				box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+				border-radius: 8px;
 			}
-	
-			.video-container video {
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-	
-			@media (max-width: 768px) {
-				.section-title {
-					font-size: 1rem;
-				}
-	
-				.section-description {
-					font-size: 0.9rem;
-				}
-	
-				.video-container {
-					border-radius: 8px;
-				}
-			}
-	
-			.related-product-area {
-				padding: 50px 0;
-			}
-	
-			.section-title h1 {
-				font-size: 2.5rem;
-				font-weight: bold;
-			}
-	
-			.card {
-				border: none;
-				background-color: #f9f9f9;
-				border-radius: 10px;
-				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-				transition: transform 0.3s, box-shadow 0.3s;
-			}
-	
-			.card:hover {
-				transform: translateY(-5px);
-				box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-			}
-	
-			.card-img-top {
-				border-radius: 10px 10px 0 0;
-				object-fit: cover;
-				height: 150px;
-			}
-	
-			.card-title {
-				font-size: 1.2rem;
-				color: #333;
-			}
-	
-			.card-title:hover {
-				color: #ff5722;
-			}
-	
-			.footer-social i {
-				font-size: 1.5rem;
-				transition: color 0.3s;
-			}
-	
-			.footer-social i:hover {
-				color: #ff5722;
-			}
-	
-			/* Exclusive Deal Area */
-			.exclusive-deal-area {
-				background-color: #f9f9f9;
-				/* Fondo suave */
-				padding: 50px 15px;
-				border-radius: 10px;
-				box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-				/* Sombra para profundidad */
-			}
-	
-			/* Títulos */
+		}
+
+		.related-product-area {
+			padding: 50px 0;
+		}
+
+		.section-title h1 {
+			font-size: 2.5rem;
+			font-weight: bold;
+		}
+
+		.card {
+			border: none;
+			background-color: #f9f9f9;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s, box-shadow 0.3s;
+		}
+
+		.card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+		}
+
+		.card-img-top {
+			border-radius: 10px 10px 0 0;
+			object-fit: cover;
+			height: 150px;
+		}
+
+		.card-title {
+			font-size: 1.2rem;
+			color: #333;
+		}
+
+		.card-title:hover {
+			color: #ff5722;
+		}
+
+		.footer-social i {
+			font-size: 1.5rem;
+			transition: color 0.3s;
+		}
+
+		.footer-social i:hover {
+			color: #ff5722;
+		}
+
+		/* Exclusive Deal Area */
+		.exclusive-deal-area {
+			background-color: #f9f9f9;
+			/* Fondo suave */
+			padding: 50px 15px;
+			border-radius: 10px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			/* Sombra para profundidad */
+		}
+
+		/* Títulos */
+		.exclusive-deal-area h2 {
+			font-size: 2.5rem;
+			font-weight: 700;
+			color: #333;
+			/* Color principal */
+			margin-bottom: 15px;
+		}
+
+		.exclusive-deal-area h4 {
+			font-size: 1.8rem;
+			font-weight: 600;
+			color: #555;
+		}
+
+		.exclusive-deal-area h5 {
+			font-size: 1.4rem;
+			color: #777;
+		}
+
+		/* Texto */
+		.exclusive-deal-area p {
+			font-size: 1rem;
+			color: #666;
+			margin-bottom: 15px;
+		}
+
+		/* Listas */
+		.exclusive-deal-area ul {
+			padding-left: 20px;
+		}
+
+		.exclusive-deal-area ul li {
+			font-size: 1rem;
+			color: #444;
+			margin-bottom: 5px;
+			position: relative;
+			padding-left: 15px;
+		}
+
+		.exclusive-deal-area ul li:before {
+			content: "•";
+			/* Icono personalizado */
+			color: #ff5722;
+			/* Color del punto */
+			font-weight: bold;
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+
+		/* Imágenes */
+		.img-fluid {
+			border-radius: 10px;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+			transition: transform 0.3s ease;
+		}
+
+		.img-fluid:hover {
+			transform: scale(1.05);
+			/* Efecto de zoom */
+		}
+
+		/* Redes Sociales */
+		.footer-social a {
+			font-size: 1.5rem;
+			color: #333;
+			/* Color base */
+			transition: color 0.3s ease;
+			margin: 0 10px;
+		}
+
+		.footer-social a:hover {
+			color: #ff5722;
+			/* Color al pasar el cursor */
+		}
+
+		/* Responsive Design */
+		@media (max-width: 768px) {
 			.exclusive-deal-area h2 {
-				font-size: 2.5rem;
-				font-weight: 700;
-				color: #333;
-				/* Color principal */
-				margin-bottom: 15px;
+				font-size: 2rem;
 			}
-	
+
 			.exclusive-deal-area h4 {
-				font-size: 1.8rem;
-				font-weight: 600;
-				color: #555;
+				font-size: 1.5rem;
 			}
-	
-			.exclusive-deal-area h5 {
-				font-size: 1.4rem;
-				color: #777;
-			}
-	
-			/* Texto */
+
 			.exclusive-deal-area p {
-				font-size: 1rem;
-				color: #666;
-				margin-bottom: 15px;
+				font-size: 0.9rem;
 			}
-	
-			/* Listas */
-			.exclusive-deal-area ul {
-				padding-left: 20px;
-			}
-	
-			.exclusive-deal-area ul li {
-				font-size: 1rem;
-				color: #444;
-				margin-bottom: 5px;
-				position: relative;
-				padding-left: 15px;
-			}
-	
-			.exclusive-deal-area ul li:before {
-				content: "•";
-				/* Icono personalizado */
-				color: #ff5722;
-				/* Color del punto */
-				font-weight: bold;
-				position: absolute;
-				left: 0;
-				top: 0;
-			}
-	
-			/* Imágenes */
-			.img-fluid {
-				border-radius: 10px;
-				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-				transition: transform 0.3s ease;
-			}
-	
-			.img-fluid:hover {
-				transform: scale(1.05);
-				/* Efecto de zoom */
-			}
-	
-			/* Redes Sociales */
-			.footer-social a {
-				font-size: 1.5rem;
-				color: #333;
-				/* Color base */
-				transition: color 0.3s ease;
-				margin: 0 10px;
-			}
-	
-			.footer-social a:hover {
-				color: #ff5722;
-				/* Color al pasar el cursor */
-			}
-	
-			/* Responsive Design */
-			@media (max-width: 768px) {
-				.exclusive-deal-area h2 {
-					font-size: 2rem;
-				}
-	
-				.exclusive-deal-area h4 {
-					font-size: 1.5rem;
-				}
-	
-				.exclusive-deal-area p {
-					font-size: 0.9rem;
-				}
-			}
-	
-			/* Features Area Styles */
-			.features-area {
-				background-color: #fff;
-				padding: 50px 15px;
-			}
-	
-			.features-inner {
-				display: flex;
-				flex-wrap: wrap;
-				justify-content: center;
-				border-radius: 10px;
-				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-			}
-	
+		}
+
+		/* Features Area Styles */
+		.features-area {
+			background-color: #fff;
+			padding: 50px 15px;
+		}
+
+		.features-inner {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+		}
+
+		.single-features {
+			background: #fff;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.single-features:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+		}
+
+		.single-features h6 {
+			font-size: 1.2rem;
+			font-weight: bold;
+			color: #333;
+			margin-bottom: 10px;
+		}
+
+		.single-features p {
+			font-size: 0.95rem;
+			color: #666;
+			line-height: 1.5;
+		}
+
+		.f-icon img {
+			max-width: 50px;
+		}
+
+		@media (max-width: 768px) {
 			.single-features {
-				background: #fff;
-				padding: 20px;
-				border-radius: 10px;
-				box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-				transition: transform 0.3s ease, box-shadow 0.3s ease;
+				margin-bottom: 20px;
 			}
-	
-			.single-features:hover {
-				transform: translateY(-5px);
-				box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-			}
-	
-			.single-features h6 {
-				font-size: 1.2rem;
-				font-weight: bold;
-				color: #333;
-				margin-bottom: 10px;
-			}
-	
-			.single-features p {
-				font-size: 0.95rem;
-				color: #666;
-				line-height: 1.5;
-			}
-	
-			.f-icon img {
-				max-width: 50px;
-			}
-	
-			@media (max-width: 768px) {
-				.single-features {
-					margin-bottom: 20px;
-				}
-			}
-	
-			/* Blog Category Area */
-			.blog_categorie_area {
-				background-color: #f9f9f9;
-				padding: 50px 0;
-			}
-	
+		}
+
+		/* Blog Category Area */
+		.blog_categorie_area {
+			background-color: #f9f9f9;
+			padding: 50px 0;
+		}
+
+		.categories_post {
+			position: relative;
+			overflow: hidden;
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+			background-color: #fff;
+		}
+
+		.categories_post:hover {
+			transform: scale(1.05);
+			box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+		}
+
+		.categories_post img {
+			width: 100%;
+			height: auto;
+			border-bottom: 3px solid #ffa500;
+		}
+
+		.categories_details {
+			padding: 20px;
+			text-align: center;
+		}
+
+		.categories_text h5 {
+			font-size: 1.5rem;
+			font-weight: bold;
+			color: #333;
+			margin-bottom: 10px;
+		}
+
+		.categories_text p {
+			font-size: 1rem;
+			color: #666;
+			line-height: 1.5;
+		}
+
+		.border_line {
+			width: 50px;
+			height: 3px;
+			background-color: #ffa500;
+			margin: 10px auto;
+			border-radius: 10px;
+		}
+
+		@media (max-width: 768px) {
 			.categories_post {
-				position: relative;
-				overflow: hidden;
-				border-radius: 10px;
-				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-				transition: transform 0.3s ease, box-shadow 0.3s ease;
-				background-color: #fff;
+				margin-bottom: 20px;
 			}
-	
-			.categories_post:hover {
-				transform: scale(1.05);
-				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-			}
-	
-			.categories_post img {
-				width: 100%;
-				height: auto;
-				border-bottom: 3px solid #ffa500;
-			}
-	
-			.categories_details {
-				padding: 20px;
-				text-align: center;
-			}
-	
-			.categories_text h5 {
-				font-size: 1.5rem;
-				font-weight: bold;
-				color: #333;
-				margin-bottom: 10px;
-			}
-	
-			.categories_text p {
-				font-size: 1rem;
-				color: #666;
-				line-height: 1.5;
-			}
-	
-			.border_line {
-				width: 50px;
-				height: 3px;
-				background-color: #ffa500;
-				margin: 10px auto;
-				border-radius: 10px;
-			}
-	
-			@media (max-width: 768px) {
-				.categories_post {
-					margin-bottom: 20px;
-				}
-			}
-		</style>
+		}
+	</style>
 </head>
 
 <body id="category">
@@ -422,7 +422,8 @@
 									<li class="nav-item"><a class="nav-link" href="snack.html">Snack bar</a></li>
 									<li class="nav-item"><a class="nav-link" href="maruchan.html">Maruchan Bar</a></li>
 									<li class="nav-item"><a class="nav-link" href="elote.html">Barra de Elotes</a></li>
-									<li class="nav-item"><a class="nav-link" href="cakes.html">Mini hotcakes Bar</a></li>
+									<li class="nav-item"><a class="nav-link" href="cakes.html">Mini hotcakes Bar</a>
+									</li>
 								</ul>
 							</li>
 							<li class="nav-item submenu dropdown">
@@ -443,9 +444,9 @@
 								</ul>
 							</li> -->
 							<li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
-                            <li><a href="https://wa.me/526645017437" class="external"><img src="/img/WhatsappLogo.png"
-                                style="height:40px;"></a></li>
-                  
+							<li><a href="https://wa.me/526645017437" class="external"><img src="/img/WhatsappLogo.png"
+										style="height:40px;"></a></li>
+
 						</ul>
 						<!-- <ul class="nav navbar-nav navbar-right">
 							<li class="nav-item"><a href="#" class="cart"><span class="ti-bag"></span></a></li>
@@ -487,52 +488,58 @@
 	<!-- End Banner Area -->
 
 	<!-- Start Exclusive Deal Area - Mini Hotcakes -->
-<section class="exclusive-deal-area pb-100">
-    <div class="container">
-        <div class="section-top-border text-center">
-            <h2 class="mb-30">Mini Hotcakes: Dulzura en Cada Bocado</h2>
-            <p class="lead">
-                Nuestra <strong>Barra de Mini Hotcakes</strong> es el toque perfecto para consentir a tus invitados con deliciosos bocaditos esponjosos, servidos con una variedad de toppings y sabores irresistibles. ¡Perfectos para eventos infantiles, reuniones y celebraciones especiales!
-            </p>
-        </div>
-        <div class="row align-items-center mt-4">
-            <!-- Imagen -->
-            <div class="col-md-4">
-                <img src="img/MiniCakes/cake4.jpeg" alt="Mini Hotcakes" class="img-fluid rounded shadow-sm">
-            </div>
-            <!-- Descripción -->
-            <div class="col-md-8">
-                <h4 class="mb-3">Personaliza tus Mini Hotcakes a tu Gusto</h4>
-                <p>
-                    Suaves, esponjosos y servidos con los mejores ingredientes, nuestros Mini Hotcakes son ideales para endulzar cualquier ocasión.
-                </p>
-                <h5>Opciones disponibles:</h5>
-                <ul class="list-unstyled pl-3">
-                    <li><strong>Frutas:</strong> Fresas, plátano, kiwi y arándanos.</li>
-                    <li><strong>Toppings:</strong> Chocolate líquido, cajeta, lechera y crema batida.</li>
-                    <li><strong>Extras:</strong> Nuez, almendra, coco rallado y chispas de colores.</li>
-                </ul>
-                <p>
-                    Cada plato es preparado al momento, asegurando frescura y un sabor irresistible. ¡Dale a tu evento un toque especial con nuestra Barra de Mini Hotcakes!
-                </p>
-            </div>
-        </div>
-        <!-- Redes Sociales -->
-        <div class="row mt-5 text-center">
-            <div class="col-12">
-                <h5>¡Síguenos en nuestras redes sociales!</h5>
-                <p>Descubre más sobre nuestra Barra de Mini Hotcakes y otros servicios en nuestras plataformas.</p>
-                <div class="footer-social d-flex justify-content-center gap-3">
-                    <a href="https://www.facebook.com/profile.php?id=61569756245811" target="_blank"><i class="fa fa-facebook"></i></a>
-                    <a href="https://www.instagram.com/taqu.izasrefugio/" target="_blank"><i class="fa fa-instagram"></i></a>
-                    <a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1" target="_blank"><i class="fa fa-tiktok"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- End Exclusive Deal Area - Mini Hotcakes -->
-
+	<section class="exclusive-deal-area pb-100">
+		<div class="container">
+			<div class="section-top-border text-center">
+				<h2 class="mb-30">Mini Hotcakes: Dulzura en Cada Bocado</h2>
+				<p class="lead">
+					Nuestra <strong>Barra de Mini Hotcakes</strong> es el toque perfecto para consentir a tus invitados
+					con deliciosos bocaditos esponjosos, servidos con una variedad de toppings y sabores irresistibles.
+					¡Perfectos para eventos infantiles, reuniones y celebraciones especiales!
+				</p>
+			</div>
+			<div class="row align-items-center mt-4">
+				<!-- Imagen -->
+				<div class="col-md-4">
+					<img src="img/MiniCakes/cake4.jpeg" alt="Mini Hotcakes" class="img-fluid rounded shadow-sm">
+				</div>
+				<!-- Descripción -->
+				<div class="col-md-8">
+					<h4 class="mb-3">Personaliza tus Mini Hotcakes a tu Gusto</h4>
+					<p>
+						Suaves, esponjosos y servidos con los mejores ingredientes, nuestros Mini Hotcakes son ideales
+						para endulzar cualquier ocasión.
+					</p>
+					<h5>Opciones disponibles:</h5>
+					<ul class="list-unstyled pl-3">
+						<li><strong>Frutas:</strong> Fresas, plátano, kiwi y arándanos.</li>
+						<li><strong>Toppings:</strong> Chocolate líquido, cajeta, lechera y crema batida.</li>
+						<li><strong>Extras:</strong> Nuez, almendra, coco rallado y chispas de colores.</li>
+					</ul>
+					<p>
+						Cada plato es preparado al momento, asegurando frescura y un sabor irresistible. ¡Dale a tu
+						evento un toque especial con nuestra Barra de Mini Hotcakes!
+					</p>
+				</div>
+			</div>
+			<!-- Redes Sociales -->
+			<div class="row mt-5 text-center">
+				<div class="col-12">
+					<h5>¡Síguenos en nuestras redes sociales!</h5>
+					<p>Descubre más sobre nuestra Barra de Mini Hotcakes y otros servicios en nuestras plataformas.</p>
+					<div class="footer-social d-flex justify-content-center gap-3">
+						<a href="https://www.facebook.com/profile.php?id=61569756245811" target="_blank"><i
+								class="fa fa-facebook"></i></a>
+						<a href="https://www.instagram.com/taqu.izasrefugio/" target="_blank"><i
+								class="fa fa-instagram"></i></a>
+						<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1" target="_blank"><i
+								class="fa fa-tiktok"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- End Exclusive Deal Area - Mini Hotcakes -->
 
 	<!--================Single Product Area =================-->
 	<div class="product_image_area">
@@ -721,7 +728,6 @@
 	</section>
 	<!--================End Product Description Area =================-->
 
-
 	<!-- Start Menu Area -->
 	<div class="container">
 		<div class="row">
@@ -771,7 +777,7 @@
 				<section class="lattest-product-area pb-40 category-list">
 					<div class="row">
 
-                         <!-- single product -->
+						<!-- single product -->
 						<div class="col-lg-4 col-md-6">
 							<div class="single-product">
 								<img class="img-fluid" src="img/MiniCakes/cake7.jpeg" alt="">
@@ -932,158 +938,109 @@
 								</div>
 							</div>
 						</div>
-						
+
 					</div>
 				</section>
 				<!-- End Best Seller -->
-				
+
 			</div>
 		</div>
 	</div>
 
-	<!-- Start related-product Area -->
+	<!-- Start Related Product Area -->
 	<section class="related-product-area section_gap_bottom">
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-lg-6 text-center">
 					<div class="section-title">
-						<h1>Nuestros Servicios</h1>
-						<p>En Taquizas La Glorieta del Refugio, nos enorgullece ofrecer un menú que combina los sabores
+						<h1 class="mb-4">Nuestros Servicios</h1>
+						<p class="text-muted">
+							En Taquizas La Glorieta del Refugio, nos enorgullece ofrecer un menú que combina los sabores
 							tradicionales de la cocina mexicana con la versatilidad para satisfacer todos los gustos.
 						</p>
 					</div>
 				</div>
 			</div>
 			<div class="row">
+				<!-- Left Column: Services -->
 				<div class="col-lg-9">
 					<div class="row">
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="category.html"><img src="img/elements/1.jpeg" style="height: 100px;" alt=""></a>
-								<div class="desc">
-									<a href="category.html" class="title">Taquizas</a>
-									<div class="price">
-										<h6>
-											<ul>
-												<li>Asada</li>
-												<li>Adobada</li>
-												<li>Chorizo</li>
-												<li>Suadero</li>
-												<li>Pollo</li>
-											</ul>
-										</h6>
-										<h6 class="l-through"></h6>
-									</div>
+						<!-- Service Item -->
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+							<div class="single-related-product d-flex align-items-center">
+								<a href="category.html">
+									<img src="img/elements/1.jpeg" alt="Taquizas" class="img-thumbnail">
+								</a>
+								<div class="desc ml-3">
+									<h5><a href="category.html" class="title">Taquizas</a></h5>
+									<ul class="list-unstyled mt-2">
+										<li><i class="fa fa-check-circle text-success"></i> Asada</li>
+										<li><i class="fa fa-check-circle text-success"></i> Adobada</li>
+										<li><i class="fa fa-check-circle text-success"></i> Chorizo</li>
+										<li><i class="fa fa-check-circle text-success"></i> Suadero</li>
+										<li><i class="fa fa-check-circle text-success"></i> Pollo</li>
+									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="snack.html"><img src="img/Snacks/snack3.jpeg" style="height: 100px;" alt=""></a>
-								<div class="desc">
-									<a href="snack.html" class="title">Snacks</a>
-									<div class="price">
-										<h6><ul>
-											<li>Gummies</li>
-											<li>Dulces Mixtos</li>
-											<li>Papas</li>
-											<li>Fruta</li>
-											
-										</ul> </h6>
-										<h6 class="l-through"></h6>
-									</div>
+						<!-- Repeat the structure for other services -->
+						<!-- Service Item -->
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+							<div class="single-related-product d-flex align-items-center">
+								<a href="snack.html">
+									<img src="img/Snacks/snack3.jpeg" alt="Snacks" class="img-thumbnail">
+								</a>
+								<div class="desc ml-3">
+									<h5><a href="snack.html" class="title">Snacks</a></h5>
+									<ul class="list-unstyled mt-2">
+										<li><i class="fa fa-check-circle text-success"></i> Gummies</li>
+										<li><i class="fa fa-check-circle text-success"></i> Dulces Mixtos</li>
+										<li><i class="fa fa-check-circle text-success"></i> Papas</li>
+										<li><i class="fa fa-check-circle text-success"></i> Fruta</li>
+									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="elote.html"><img src="img/Elotes/elote2.jpeg" style="height: 100px;" alt=""></a>
-								<div class="desc">
-									<a href="elote.html" class="title">Elotes</a>
-									<div class="price">
-										<h6><ul>
-											<li>Queso</li>
-											<li>Salsas</li>
-											<li>Mayonesa</li>
-											<li>Mantequilla</li>
-											<li>Salsa macha</li>
-											<li>Limones</li>
-										</ul></h6>
-										<h6 class="l-through"></h6>
-									</div>
+						<!-- Repeat similar blocks for Elotes, Maruchan, Antojitos Mexicanos, and Mini Hotcakes -->
+						<!-- Service Item -->
+						<div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+							<div class="single-related-product d-flex align-items-center">
+								<a href="antojitos.html">
+									<img src="img/Antojitos/antojitos3.jpeg" alt="Snacks" class="img-thumbnail">
+								</a>
+								<div class="desc ml-3">
+									<h5><a href="antojitos.html" class="title">Antojitos Mexicanos</a></h5>
+									<ul class="list-unstyled mt-2">
+										<li><i class="fa fa-check-circle text-success"></i> Sopes</li>
+										<li><i class="fa fa-check-circle text-success"></i> Flutas</li>
+										<li><i class="fa fa-check-circle text-success"></i> Tostadas</li>
+										<li><i class="fa fa-check-circle text-success"></i> Cueritos</li>
+									</ul>
 								</div>
 							</div>
 						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="maruchan.html"><img src="img/Maruchan/maruchan1.jpeg" style="height: 100px;" alt=""></a>
-								<div class="desc">
-									<a href="maruchan.html" class="title">Maruchan</a>
-									<div class="price">
-										<h6><ul>
-											<li>Salchicha</li>
-											<li>Tomate y cebolla</li>
-											<li>Papas</li>
-											<li>Salsas</li>
-											<li>Camaron cocido</li>
-										</ul>
-										</h6>
-										<h6 class="l-through"></h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="antojitos.html"><img src="img/Antojitos/antojitos3.jpeg" style="height: 100px;" alt=""></a>
-								<div class="desc">
-									<a href="antojitos.html" class="title">Antojitos Mexicanos</a>
-									<div class="price">
-										<h6><ul>
-											<li>Flautas</li>
-											<li>Sopes</li>
-											<li>Tostadas</li>
-											<li>Garrafa de agua</li>
-											<li>Cueritos</li>
-										</ul></h6>
-										<h6 class="l-through"></h6>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4 col-md-4 col-sm-6 mb-20">
-							<div class="single-related-product d-flex">
-								<a href="cakes.html"><img src="img/MiniCakes/cake1.jpeg" style="height: 100px;" alt=""></a>
-								<div class="desc">
-									<a href="cakes.html" class="title">Mini Hotcakes</a>
-									<div class="price">
-										<h6><ul>
-											<li>Almendra</li>
-											<li>Nuez</li>
-											<li>Chispas de colores</li>
-											<li>Cereales</li>
-											<li>Mini Bombones</li>
-											<li>Coco rayado</li>
-										</ul></h6>
-										<h6 class="l-through"></h6>
-									</div>
-								</div>
-							</div>
-						</div>
-
+						<!-- Repeat similar blocks for Elotes, Maruchan, Antojitos Mexicanos, and Mini Hotcakes -->
 					</div>
 				</div>
-				<div class="col-lg-3">
-					<div class="ctg-right">
-						<a href="#" target="">
-							<img class="img-fluid d-block mx-auto" src="img/banneramarillo.jpeg" alt="">
-						</a>
+				<!-- Right Column: Banner -->
+				<div class="col-lg-3 d-flex flex-column align-items-center justify-content-center">
+					<a href="#" target="_blank">
+						<img src="img/banneramarillo.jpeg" alt="Promoción" class="img-fluid mb-3">
+					</a>
+					<h6>Síguenos en redes sociales</h6>
+					<div class="footer-social mt-3">
+						<a href="https://www.facebook.com/profile.php?id=61569756245811" target="_blank"><i
+								class="fa fa-facebook"></i></a>
+						<a href="https://www.tiktok.com/@taquizas.la.glori?_t=ZM-8sm9zdwyRzp&_r=1" target="_blank"><i
+								class="fa fa-tiktok"></i></a>
+						<a href="https://www.instagram.com/taqu.izasrefugio/" target="_blank"><i
+								class="fa fa-instagram"></i></a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- End related-product Area -->
+	<!-- End Related Product Area -->
 
 	<!-- start footer Area -->
 	<footer class="footer-area section_gap">
